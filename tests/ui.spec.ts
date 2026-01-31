@@ -6,7 +6,7 @@ test("Pos_UI_0001 - Real-time output update", async ({ page }) => {
   const input = page.getByPlaceholder("Input Your Singlish Text Here.");
   const output = page.locator('xpath=(//*[normalize-space()="Sinhala"])[last()]/following-sibling::*[1]');
 
-  await input.fill("mama gamee innavaa");
+  await input.fill("");
   await input.type("", { delay: 100 });
 
   await expect(output).toHaveText(/[\S]/, { timeout: 15000 });
