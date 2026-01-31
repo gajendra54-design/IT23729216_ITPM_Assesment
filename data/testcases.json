@@ -1,0 +1,240 @@
+[
+  {
+    "id": "Pos_Fun_0001",
+    "name": "Convert a short daily greeting phrase",
+    "type": "Positive",
+    "input": "ayubovan! suba udhaesanak veevaa!",
+    "expectedContains": "අයුබොවන්! සුබ උදැසනක් වේවා!"
+  },
+  {
+    "id": "Pos_Fun_0002",
+    "name": "Long mixed-language input with slang + typo causes incorrect conversion",
+    "type": "Positive",
+    "input": "machan mata adha  party ekak mata adha meeting ekee Zoom link eka email ekak vidhihata evanna puLuvandha? Please send it before 8am. Mama party ekata yanna kalin check karanna oonea. Email ekak evanna amaarunam WhatsApp msg ekak dhaapan. Thx!",
+    "expectedContains": "මචන් මට අද  party එකක් මට අද meeting එකේ Zoom link එක email එකක් විදිහට එවන්න පුළුවන්ද?"
+  },
+  {
+    "id": "Pos_Fun_0003",
+    "name": "Convert a short request phrase",
+    "type": "Positive",
+    "input": "mata game ekak gahanna puluvandha?",
+    "expectedContains": "මට game එකක් ගහන්න පුලුවන්ද?"
+  },
+  {
+    "id": "Pos_Fun_0004",
+    "name": "Convert a compound sentence",
+    "type": "Positive",
+    "input": "api kaeema kanna yanavaa saha passe chithrapatayakuth balanavaa magee yaluvath samaga.",
+    "expectedContains": "අපි කෑම කන්න යනවා සහ පස්සෙ චිත්‍රපටයකුත් බලනවා මගේ යලුවත් සමග."
+  },
+  {
+    "id": "Pos_Fun_0005",
+    "name": "Convert a complex sentence",
+    "type": "Positive",
+    "input": "oyaa enavaanam mama balan innavaa mokadha oyaa naethuva ee vaedee karanna amaaru venavaa.",
+    "expectedContains": "ඔයා එනවානම් මම බලන් ඉන්නවා මොකද ඔයා නැතුව ඒ වැඩේ කරන්න අමාරු වෙනවා."
+  },
+  {
+    "id": "Pos_Fun_0006",
+    "name": "Convert an interrogative sentence",
+    "type": "Positive",
+    "input": "sidhdha una anathurath samaga eyaata kohomadha?",
+    "expectedContains": "සිද්ද උන අනතුරත් සමග එයාට කොහොමද?"
+  },
+  {
+    "id": "Pos_Fun_0007",
+    "name": "Convert an imperative sentence",
+    "type": "Positive",
+    "input": "vahaama enna ara visikarapu eka ahulalaa dhaanna.",
+    "expectedContains": "වහාම එන්න අර විසිකරපු එක අහුලලා දාන්න."
+  },
+  {
+    "id": "Pos_Fun_0008",
+    "name": "Convert a positive sentence",
+    "type": "Positive",
+    "input": "oyaa eeka hariyata kiyavalaa uththara liyala thiyanavaa eekanisaa oyata sampurNa lakuNu hamuveyi.",
+    "expectedContains": "ඔයා ඒක හරියට කියවලා උත්තර ලියල තියනවා ඒකනිසා ඔයට සම්පුර්ණ ලකුණු හමුවෙයි."
+  },
+  {
+    "id": "Pos_Fun_0009",
+    "name": "Convert a negative sentence",
+    "type": "Positive",
+    "input": "ohu hariyata assignment eka karalaa naehae.",
+    "expectedContains": "ඔහු හරියට assignment එක කරලා නැහැ."
+  },
+  {
+    "id": "Pos_Fun_0010",
+    "name": "Convert singular pronoun sentence",
+    "type": "Positive",
+    "input": "mama yanna hadhannee gamanak.",
+    "expectedContains": "මම යන්න හදන්නේ ගමනක්."
+  },
+  {
+    "id": "Pos_Fun_0011",
+    "name": "Convert a polite request",
+    "type": "Positive",
+    "input": "oyata puluvannan karuNaakaralaa mata me podi udhavvak karalaa dhenna puLuvandha?",
+    "expectedContains": "ඔයට පුලුවන්නන් කරුණාකරලා මට මෙ පොඩි උදව්වක් කරලා දෙන්න පුළුවන්ද?"
+  },
+  {
+    "id": "Pos_Fun_0012",
+    "name": "Convert a day-to-day expression",
+    "type": "Positive",
+    "input": "mata sellam karanna hithenavaa.",
+    "expectedContains": "මට සෙල්ලම් කරන්න හිතෙනවා."
+  },
+  {
+    "id": "Pos_Fun_0013",
+    "name": "Convert a multi-word expression",
+    "type": "Positive",
+    "input": "oyaata hariyata vaeda vagee",
+    "expectedContains": "ඔයාට හරියට වැඩ වගේ"
+  },
+  {
+    "id": "Pos_Fun_0014",
+    "name": "Convert a sentence with proper spacing",
+    "type": "Positive",
+    "input": "adha mama magee yaaluvage  gedhara yanavaa.",
+    "expectedContains": "අද මම මගේ යාලුවගෙ  ගෙදර යනවා."
+  },
+  {
+    "id": "Pos_Fun_0015",
+    "name": "Convert repeated words for emphasis",
+    "type": "Positive",
+    "input": "hari hari hari hari",
+    "expectedContains": "හරි හරි හරි හරි"
+  },
+  {
+    "id": "Pos_Fun_0016",
+    "name": "Convert past tense sentence",
+    "type": "Positive",
+    "input": "mama iiyee kanna giyaa hodha restaurant ekakata.",
+    "expectedContains": "මම ඊයේ කන්න ගියා හොද restaurant එකකට."
+  },
+  {
+    "id": "Pos_Fun_0017",
+    "name": "Convert present tense sentence",
+    "type": "Positive",
+    "input": "mama dhaen IT project ekaka vaeda karanavaa.",
+    "expectedContains": "මම දැන් IT project එකක වැඩ කරනවා."
+  },
+  {
+    "id": "Pos_Fun_0018",
+    "name": "Convert future tense sentence",
+    "type": "Positive",
+    "input": "mama heta magee yaluvage gedhara yanavaa eyagee assignment ekata udhavu karanna.",
+    "expectedContains": "මම හෙට මගේ යලුවගෙ ගෙදර යනවා එයගේ assignment එකට උදවු කරන්න."
+  },
+  {
+    "id": "Pos_Fun_0019",
+    "name": "Convert negation pattern",
+    "type": "Positive",
+    "input": "mata eeken vaeda karanna baeehaee eeka nisaa mata eeka epaa.",
+    "expectedContains": "මට ඒකෙන් වැඩ කරන්න බෑහෑ ඒක නිසා මට ඒක එපා"
+  },
+  {
+    "id": "Pos_Fun_0020",
+    "name": "Convert plural pronoun sentence",
+    "type": "Positive",
+    "input": "api sigiriyee yamu.",
+    "expectedContains": "අපි සිගිරියේ යමු."
+  },
+  {
+    "id": "Pos_Fun_0021",
+    "name": "Convert sentence with punctuation",
+    "type": "Positive",
+    "input": "\"eyaata kohomadha?\"",
+    "expectedContains": "\"එයාට කොහොමද?\""
+  },
+  {
+    "id": "Pos_Fun_0022",
+    "name": "Convert sentence with currency",
+    "type": "Positive",
+    "input": "ehi sumpurNa mudhala Rs. 54500.45",
+    "expectedContains": "එහි සුම්පුර්ණ මුදල Rs. 54500.45"
+  },
+  {
+    "id": "Pos_Fun_0023",
+    "name": "Convert slang phrase",
+    "type": "Positive",
+    "input": "ela machan! supiri!!",
+    "expectedContains": "එල මචන්! සුපිරි!!"
+  },
+  {
+    "id": "Pos_Fun_0024",
+    "name": "English brand name in conversation",
+    "type": "Positive",
+    "input": "LinkedIn profile eka balalaa eka hodhin hadhaaganna  eken godak vaedhagath dheeval ganna vagema karannath puluvan.",
+    "expectedContains": "LinkedIn profile එක බලලා එක හොදින් හදාගන්න  එකෙන් ගොඩක් වැදගත් දේවල් ගන්න වගෙම කරන්නත් පුලුවන්."
+  },
+  {
+    "id": "Neg_Fun_0001",
+    "name": "Joined words without spaces",
+    "type": "Negative",
+    "input": "pinaeththopinkaranavaadhigatama",
+    "expectedContains": "පින්ඇත්තොපින්කරනවාදිගටම"
+  },
+  {
+    "id": "Neg_Fun_0002",
+    "name": "Random mixed case input",
+    "type": "Negative",
+    "input": "MaMa GeDhArA YaNaVaA",
+    "expectedContains": "මම ගෙදර යනවා"
+  },
+  {
+    "id": "Neg_Fun_0003",
+    "name": "Special characters only",
+    "type": "Negative",
+    "input": "()@$#%^*^",
+    "expectedContains": "(No meaningful output)"
+  },
+  {
+    "id": "Neg_Fun_0004",
+    "name": "Special character inside word causes incorrect conversion",
+    "type": "Negative",
+    "input": "mama @gedhara# yanavaa!",
+    "expectedContains": "මම ගෙදර යනවා."
+  },
+  {
+    "id": "Neg_Fun_0005",
+    "name": "Numeric-only prefix with text",
+    "type": "Negative",
+    "input": "46251 paasala",
+    "expectedContains": "Meaningful Sinhala sentence"
+  },
+  {
+    "id": "Neg_Fun_0006",
+    "name": "Abbreviation joined with word causes incorrect conversion",
+    "type": "Negative",
+    "input": "mageIDEka hambunada eka denna puluvanda.",
+    "expectedContains": "මගේ ID එක හම්බුනාද එක දෙන්න පුලුවන්ද."
+  },
+  {
+    "id": "Neg_Fun_0007",
+    "name": "Abbreviation embedded in word causes corrupted conversion",
+    "type": "Negative",
+    "input": "mama me URLeka open karanna try karaa eth bari unaa.",
+    "expectedContains": "මම මෙ URL එක open කරන්න try කරා එත් බැරි උනා."
+  },
+  {
+    "id": "Neg_Fun_0008",
+    "name": "Pure English input",
+    "type": "Negative",
+    "input": "Hello how are you",
+    "expectedContains": "හෙළෝ හවු ආ යු"
+  },
+  {
+    "id": "Neg_Fun_0009",
+    "name": "Multiple spaces cause incorrect word spacing",
+    "type": "Negative",
+    "input": "mama s kole yanna hithan inna vaa",
+    "expectedContains": "මම ස්කොලේ යන්න හිතන් ඉන්නවා ."
+  },
+  {
+    "id": "Neg_Fun_0010",
+    "name": "Single character input",
+    "type": "Negative",
+    "input": "a",
+    "expectedContains": "(Likely no conversion)"
+  }
+]
